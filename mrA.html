@@ -33,13 +33,16 @@
                 <input id="input" placeholder = "Went on run, did 10 pushups, etc.">
             </div>
             <div class = "saveLogButton">
-                <button id="save" onclick = "save();">Save Exercise</button>
+                <button id="save" onclick = "increaseXP();">Log Workout</button>
+                <button onclick="clearExercise();">Clear</button>
                 <button  onclick = "view();">View Past Exercises</button>
                 <!-- <button onclick = "clear();">Clear Past Exercises</button> -->
-                <button onclick="clearExercise();">Clear</button>
+                
                 <h3 id = "output">Past Exercises: </h3>
                 </div>
-        
+                
+            <div id= "center" class="xp-bar"> </div> 
+                
         
 
                

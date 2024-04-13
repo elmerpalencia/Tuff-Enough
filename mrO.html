@@ -55,13 +55,22 @@
                 </div>
             </div>
             <input id="input" placeholder = "Went on run, did 10 pushups, etc.">
-            <button onclick = "save();" style = "text-align: center; color: black;">Log Progress</button>
-            <button onclick = "view();" style = "text-align: center; color: black">Past Workouts</button>
+            <button onclick = "save();" style = "text-align: center; color: black;">Log Workout</button>
             <button onclick = "clearPast()" style = "text-align: center; color: black">Clear Past Workouts</button>
+            <button onclick = "view();" style = "text-align: center; color: black">Past Workouts</button>
+            
             <h2 id = "output">Past Workouts</h2>
+            <div id= "center" class="xp-bar"> </div>
 
             <script>
+                const element = document.getElementById('center');   
+                let percent = 0;
                 function save(){
+                percent += 10;             
+                document.getElementById('center').style.width = percent + "%";             
+                if(percent === 110){               
+                    alert("Congrats! You have leveled up.")               
+                    window.location.href = "final.html"; }
                 var new_data = document.getElementById('input').value;
 
                 if(localStorage.getItem('olympiaLogs') == null){
@@ -74,6 +83,7 @@
                     }
 
                     localStorage.setItem('olympiaLogs', JSON.stringify(old_data));
+                    document.getElementById('input').value = '';
                 }
 
                 function view(){
@@ -85,6 +95,7 @@
 
                 function clearPast(){
                     localStorage.setItem('olympiaLogs', '[]');
+                    view();
                 }
             
             </script>

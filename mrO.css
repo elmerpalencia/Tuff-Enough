@@ -164,3 +164,11 @@ form {
   button:hover {
     opacity: 0.8;
   }
+  .xp-bar{
+    width: 0px;
+    height: 20px;
+    position: absolute;
+    background-color: green;
+    animation: progress-animation 5s forwards;
+  }
+  

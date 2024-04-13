@@ -1,8 +1,17 @@
 
 
-
-const save =() => {
+const element = document.getElementById('center');
+let percent = 0;
+function increaseXP() {
     //get data from input box
+    percent += 10;             
+    document.getElementById('center').style.width = percent + "%";             
+    if(percent === 110){               
+        alert("Congrats! You have leveled up.")               
+        window.location.href = "BGP.html"; }
+    
+
+    var new_data = document.getElementById('input').value;
     var new_data = document.getElementById('input').value;
     //if there is nothing saved at the start then save an empty array
     if(localStorage.getItem('exerciseLogs') == null){

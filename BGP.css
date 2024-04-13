@@ -73,7 +73,7 @@
 }
 
 .xp-bar{
-  width: 100px;
+  width: 0px;
   height: 20px;
   position: absolute;
   background-color: green;
@@ -94,8 +94,7 @@ h1{
   color: #800020;
   text-shadow: 2px 2px 4px #000000;
   text-align: left;
-  margin-top: 25px;
-  margin-left: 60px;
+  margin: 5%;
   font-size:350%;
   font-family: "verdana";
 }
@@ -192,4 +191,10 @@ form {
   }
   button:hover {
     opacity: 0.8;
+  }
+
+  #input{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 60px;
   }

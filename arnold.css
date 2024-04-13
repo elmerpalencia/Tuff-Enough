@@ -73,7 +73,7 @@ button:hover {
 
 .xp-bar{
   width: 100px;
-    height: 20px;
+    height: 0px;
     position: absolute;
     background-color: green;
     animation: progress-animation 5s forwards;
