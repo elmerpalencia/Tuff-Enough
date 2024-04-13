@@ -49,9 +49,13 @@
 
         <footer>
             <div class = "button-container">
+                <input id="input" placeholder = "Went on run, did 10 pushups, etc">
                 <button onclick="increaseXP()" id="log-exercise" type="submit"> Log Workout</button>
-                <button type="submit"> See Progress</button>
-                <button type="submit"> Previous Workout</button>
+                <button onclick = "clearArnold()" type="submit"> Clear Recent Workouts</button>
+                <button onclick = "view()" type="submit"> Previous Workout</button>
+                <h3 id = "output">Previous Workout View</h3>
+            </div>
+        </footer>
                 <div id= "center" class="xp-bar"></div>
                 <script>
                     const element = document.getElementById('center');
@@ -60,19 +64,43 @@
                 function increaseXP () {
                     percent += 10;
                     document.getElementById('center').style.width = percent + "%";
-                    if(percent === 100){
+                    if(percent === 110){
                     alert("Congrats! You have leveled up.")
-                    window.location.href = "mrO.html";
+                    window.location.href = "mrO.html";}
+                    
+                    var new_data = document.getElementById('input').value;
+                    
+                    if(localStorage.getItem('arnoldLogs') == null){
+                        localStorage.setItem('arnoldLogs', '[]');
+                    }
+
+                    var old_data = JSON.parse(localStorage.getItem('arnoldLogs'));
+                    if(new_data){
+                        old_data.push(new_data);
+                    }
+
+                    localStorage.setItem('arnoldLogs', JSON.stringify(old_data));
+                    document.getElementById('input').value = '';
+
 
                     
-
-                    }
 
                     
                 }
+
+                function view(){
+                    if(localStorage.getItem('arnoldLogs') != null){
+                        document.getElementById('output').innerHTML = JSON.parse(localStorage.getItem('arnoldLogs'));
+                    }
+                }
+
+                function clearArnold(){
+                    localStorage.setItem('arnoldLogs', '[]');
+                    view();
+                }
         
                 </script>
-            </div>
+            
             <div>
                 <button onclick="logout()" id="logout" type="submit">Logout</button>
 
@@ -82,7 +110,7 @@
                     }
                 </script>
             </div>
-        </footer>
+        
 
    
         

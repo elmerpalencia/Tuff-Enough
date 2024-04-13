@@ -114,7 +114,8 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 250px;
+  width: 100%;
+ 
   border-radius: 20px;
   font-family: "verdana";
 }
@@ -145,8 +146,8 @@ button:hover {
 
 
 .xp-bar{
-  width: 100px;
-    height: 0px;
+  width: 0px;
+    height: 20px;
     position: absolute;
     background-color: green;
     animation: progress-animation 5s forwards;
@@ -156,7 +157,7 @@ button:hover {
   background-color: #fe0000;
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 30px 0;
   border: none;
   cursor: pointer;
   width: 100px;
