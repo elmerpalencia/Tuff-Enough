@@ -31,13 +31,28 @@
            
             
             <img src = "imagesandavatars/averagebuild.png" alt = "Your Avatar" width = "50" height = "100" class = "centered-image">
+            <div class = "logInput">
             <input id="input" placeholder = "Went on run, did 10 pushups, etc.">
-            <div>
-            <button class = "saveLogButton" onclick = "save();"> Save Exercise</button>
+            </div>
+            <div class = "saveLogButton">
+            <button  onclick = "save();"> Save Exercise</button>
             </div>
         
             <script>
                 function save(){
+                    //get data from input box
+                    var new_data = document.getElementByClass('input').value;
+                    //if there is nothing saved at the start then save an empty array
+                    if(localStorage.getItem('exerciseLogs') == null){
+                        localStorage.setItem
+                    }
+
+                    //get old data and put it into new data
+                    var old_data = JSON.parse(localStorage.getItem('exerciseLogs'));
+                    old_data.push(new_data);
+
+                    //save everything
+                    localStorage.setItem('exerciseLogs', JSON.stringify(old_data));
 
                 }
             </script>
