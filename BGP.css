@@ -69,6 +69,24 @@
   width: 100%;
 }
 
+.xp-bar{
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  background-color: green;
+  animation: progress-animation 5s forwards;
+}
+
+#logout {
+  background-color: #fe0000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: popinter;
+  width: 100px
+}
+
 h1{
   text-align: left;
   margin-top: 50px;
