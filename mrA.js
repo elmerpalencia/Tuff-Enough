@@ -10,8 +10,9 @@ const save =() => {
 
     //get old data and put it into new data
     var old_data = JSON.parse(localStorage.getItem('exerciseLogs'));
+    if(new_data){
     old_data.push(new_data);
-
+    }
     //save everything
     localStorage.setItem('exerciseLogs', JSON.stringify(old_data));
 
@@ -26,18 +27,13 @@ function view(){
     }
 }
 
-console.log("between view and clear");
-
-const clear = () => {
+const clearExercise = () => {
     console.log("Inside clear");
 
-    localStorage.clear();
+    localStorage.setItem('exerciseLogs', '[]');
     
-    if(localStorage.getItem('exerciseLogs') != null){
-        document.getElementById('output').innerHTML = JSON.parse(localStorage.getItem('exerciseLogs'));
-    }
+    // if(localStorage.getItem('exerciseLogs') != null){
+    //     document.getElementById('output').innerHTML = JSON.parse(localStorage.getItem('exerciseLogs'));
+    // }
 }
-
-console.log("after clear func");
-
 
