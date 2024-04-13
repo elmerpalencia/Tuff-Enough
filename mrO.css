@@ -1,6 +1,6 @@
 
 *{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(7, 7, 7);
     margin: 0;
     padding: 0;
 }
@@ -21,29 +21,35 @@
     height: 200px;
     margin-top: 40px;
     margin-left: 40px;
-    box-shadow: 10px 10px 5px rgb(62, 63, 63);
+    box-shadow: 10px 10px 5px rgb(251, 252, 252);
 }
 .nav{
     align-items: center;
-    margin-left: 300px;
+    margin-left: 350px;
     padding-right: 40px;
     padding-top: 20px;
 }
 .nav a{
     font-size: 20px;
     padding: 14px 16px;
-    color: #f90202;
+    color: #fdfafa;
     text-decoration: none;
 
 }
 .nav a:hover{
-    background-color: #fe0000;
+    background-color: #fffdfd;
     color: white;
     text-decoration: underline;
 }
 
 h1{
     text-align: center;
+    color: white;
+}
+
+h2{
+  text-align: center;
+  color: white;
 }
 
 
@@ -66,7 +72,7 @@ form {
   
   /* Set a style for all buttons */
   button {
-    background-color: #fe0000;
+    background-color: #f9f9f9;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -84,7 +90,7 @@ form {
   .cancelbtn {
     width: auto;
     padding: 10px 18px;
-    background-color: #f44336;
+    background-color: #fdfafa;
   }
   
   /* Center the avatar image inside this container */
