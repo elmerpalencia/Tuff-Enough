@@ -26,6 +26,20 @@
                             
                 <h3>Your Body Build</h3>
                 <h3>Swoleness Level</h3>
+
+                <button onclick="increaseXP()" id="log-exercise" type="submit"> Log Workout </button>                 
+                <div id= "center" class="xp-bar"> </div>
+
+                <script> const element = document.getElementById('center');           
+                let percent = 0;
+
+                function increaseXP () {             
+                    percent += 10;             
+                    document.getElementById('center').style.width = percent + "%";             
+                    if(percent === 100){               
+                        alert("Congrats! You have leveled up.")               
+                        window.location.href = "arnold.html"; }}
+                    </script>
             </div>
             
             <div> 
@@ -39,6 +53,17 @@
                 <button type="submit"> Log Workout </button>
                 <button type="submit"> See Progress </button>
                 <button type="submit"> Previous Workout </button>
+            </div>
+
+            <div> 
+                <button onclick = "logout()" id = "logout" type = "submit"> Logout
+                </button>
+
+                <script>
+                    function logout() {
+                        window.location.href = "index.html";
+                    }
+                </script>
             </div>
         </footer>
 
