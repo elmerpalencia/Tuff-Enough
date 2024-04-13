@@ -12,56 +12,72 @@
         
             <div class = "nav">
                 <ul>
-                    <a href = "mrA.html">Mr. America</a>
-                    <a href = "BGP.html">British Grand Prix</a>
-                    <a href = "arnold.html">Arnold's Classic</a>
-                    <a href = "mrO.html">Mr. Olympia</a>
+                    <h1>
+                        <a href = "mrA.html">Mr. America</a>
+                        <a href = "BGP.html">British Grand Prix</a>
+                        <a href = "arnold.html">Arnold's Classic</a>
+                        <a href = "mrO.html">Mr. Olympia</a>
+                    </h1>
                 </ul>
             </div>
+            <!-- <div>
+                <img
+                    src="imagesandavatars/bigandblack.png"
+                    alt="illustration"
+                    class="big-and-black"
+                />
+            </div> -->
         </div>
-        
-        <div class = "button-container">
 
-
-            <button type="submit"> See Progress</button>
-            <button type="submit"> Previous Workoutt</button>
-        </div>
-            
-    
-        <button onclick="increaseXP()" id="log-exercise" type="submit"> Log Workout</button>
-        <div id= "center" class="xp-bar"></div>
-        <script>
-        const element = document.getElementById('center');
-        let percent = 0;
-        
-        function increaseXP () {
-            percent += 10;
-            document.getElementById('center').style.width = percent + "%";
-            if(percent === 100){
-            alert("Congrats! You have leveled up.")
-            window.location.href = "mrO.html";
-            
-            }
-        }
-        
-        </script>
-
-        <button onclick="logout()" id="logout" type="submit">Logout</button>
-
-        <script>
-            function logout() {
-            window.location.href = "index.html";
-          }
-        </script>
-
-        
-
-        
-
-
+        <div class = "title">
+            <div>
+                <h2>Arnold's Classic</h2>
+                <h3>"The last three or four reps is what makes the muscle grow. 
+                    This area of pain divides the champion from someone else who is not a champion. 
+                    That's what most people lack, having the guts to go on and just say 
+                    they'll go through the pain no matter what happens." - Arnold Schwarzenegger
+                </h3>
+            </div>
+            <div>
+                <img
+                    src="imagesandavatars/Bodybuilder.png"
+                    alt="illustration"
+                    class="bodybuilder-image"
+                />
+            </div>
+        </div>           
 
         <footer>
-       
+            <div class = "button-container">
+                <button onclick="increaseXP()" id="log-exercise" type="submit"> Log Workout</button>
+                <button type="submit"> See Progress</button>
+                <button type="submit"> Previous Workout</button>
+                <div id= "center" class="xp-bar"></div>
+                <script>
+                    const element = document.getElementById('center');
+                    let percent = 0;
+        
+                function increaseXP () {
+                    percent += 10;
+                    document.getElementById('center').style.width = percent + "%";
+                    if(percent === 100){
+                    alert("Congrats! You have leveled up.")
+                    window.location.href = "mrO.html";
+                    
+                    }
+                }
+        
+                </script>
+            </div>
+            <div>
+                <button onclick="logout()" id="logout" type="submit">Logout</button>
+
+                <script>
+                    function logout() {
+                    window.location.href = "index.html";
+                    }
+                </script>
+            </div>
         </footer>
 
    

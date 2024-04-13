@@ -6,23 +6,52 @@
 }
 
 
-.header{
-    display: flex;
-  align-items: center;
-  /* background-color: black; */
-  
+.header {
+  display: flex;
+  align-items: center;  
+  background-color: rgb(183, 172, 172);
   width: 100%;
-  /* box-shadow: 10px 10px 5px rgb(62, 63, 63); */
+  box-shadow: 10px 10px 5px rgb(62, 63, 63);
   padding-bottom: 20px;
   
 }
 .header img{
-    width: 200px;
-    height: 200px;
-    margin-top: 40px;
-    margin-left: 40px;
-    box-shadow: 10px 10px 5px rgb(62, 63, 63);
+    width: 75px;
+    height: 75px;
+    margin-top: 10px;
+    margin-left: 30px;
+    align-items: right;
+    box-shadow: 10px 10px 5px rgb(110, 111, 111);
 }
+
+.bodybuilder-image {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 70%;
+}
+
+.big-and-black {
+  display: block;
+  margin-left: auto;
+  width: 400px;
+  height: 300px;
+  margin-top: 10px;
+}
+
+.header-image {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-right: -1400px;
+}
+
 .nav{
   margin-top: 5%;
   float: none;
@@ -40,22 +69,66 @@
 }
 .nav a:hover{
     background-color: #fe0000;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: underline;
 }
 
-h1{
-    text-align: center;
+.title {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
+
+h1 {
+    text-align: center;
+    background-color:rgb(183, 172, 172);
+}
+
+h2 {
+  color: #000000;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: left;
+  margin: 5%;
+  margin-left: 20%;
+  font-size:350%;
+  font-family: "verdana";
+}
+
+h3 {
+  color: #000000;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: left;
+  margin: 5%;
+  margin-left: 50px;
+  font-size:150%;
+  font-family: "verdana";
+  width: 500px;  
+}
+
  /* Set a style for all buttons */
- button {
+button {
   background-color: #fe0000;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 250px;
+  border-radius: 20px;
+  font-family: "verdana";
+}
+
+.button-container {
+  display: flex; /* Use Flexbox */
+  margin-top: 100px;
+  justify-content: center;
+  margin: 12px;
+}
+
+.button-container button {
+  margin-right: 10px; /* Add some space between buttons */
+  margin-left: 10px; /* Add some space between buttons */
 }
 
 /* Add a hover effect for buttons */
@@ -90,6 +163,11 @@ button:hover {
 }
 button:hover {
   opacity: 0.8;
+}
+
+footer {
+  display: flex;
+  align-items: center;  
 }
 
 
