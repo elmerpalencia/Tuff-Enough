@@ -15,5 +15,5 @@
 //         xpBar.style.width = percentage + "%";
 // }
 
-let logData = [];
+//let logData = [];
 

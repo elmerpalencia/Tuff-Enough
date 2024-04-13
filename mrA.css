@@ -143,6 +143,10 @@ form {
     animation: progress-animation 5s forwards;
   }
 
+  .saveLogButton{
+    padding: 10px;
+  }
+
   @keyframes progress-animation {
     0% {width: 0%;}
     100% {width: 100%}
