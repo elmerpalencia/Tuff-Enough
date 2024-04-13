@@ -28,9 +28,24 @@
             <button type="submit"> Previous Workoutt</button>
         </div>
             
-        <div class = "xp-bar-container">
-            <div class="xp-bar"></div>
-        </div>
+    
+        <button onclick="increaseXP()" id="log-exercise" type="submit"> Log Workout</button>
+        <div id= "center" class="xp-bar"></div>
+        <script>
+        const element = document.getElementById('center');
+        let percent = 0;
+        
+        function increaseXP () {
+            percent += 10;
+            document.getElementById('center').style.width = percent + "%";
+            if(percent === 100){
+            alert("Congrats! You have leveled up.")
+            window.location.href = "mrO.html";
+            
+            }
+        }
+        
+        </script>
 
         <button onclick="logout()" id="logout" type="submit">Logout</button>
 
