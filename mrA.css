@@ -25,7 +25,7 @@
 }
 .nav{
     align-items: center;
-    margin-left: 300px;
+    margin-left: 500px;
     padding-right: 40px;
     padding-top: 20px;
 }
@@ -121,3 +121,7 @@ form {
     }
   }
   
+  .centered-image {
+    display: block;
+    margin: 0 auto;
+  }
