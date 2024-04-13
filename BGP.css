@@ -7,8 +7,9 @@
 
 .button-container {
   display: flex; /* Use Flexbox */
+  margin-top: 100px;
   justify-content: center;
-  margin: 0;
+  margin: 12px;
 }
 
 .button-container button {
@@ -18,10 +19,10 @@
 
 /* photo one class */
 .main-image {
-  width: 75%; /* Adjust the width as needed */
+  width: 80%; /* Adjust the width as needed */
   height: 550px; /* Maintain the aspect ratio */
   margin-top: 10px; /* Add some margin to separate it from the buttons */
-  margin-left: 100px;
+  margin-left: 80px;
 }
 
 .header{
