@@ -7,7 +7,7 @@ function increaseXP() {
     percent += 10;             
     document.getElementById('center').style.width = percent + "%";             
     if(percent === 110){               
-        alert("Congrats! You have leveled up.")               
+        alert("Congrats! You have leveled up.")
         window.location.href = "BGP.html"; }
     
 
