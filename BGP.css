@@ -21,7 +21,7 @@
 .main-image {
   width: 80%; /* Adjust the width as needed */
   height: 550px; /* Maintain the aspect ratio */
-  margin-top: 10px; /* Add some margin to separate it from the buttons */
+  margin-top: 20px; /* Add some margin to separate it from the buttons */
   margin-left: 80px;
 }
 
@@ -44,12 +44,10 @@
 }
 
 .nav{
-  margin-top: 5%;
-  float: none;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  align-items: center;
+  margin-left: 300px;
+  padding-right: 40px;
+  padding-top: 20px;
 }
 
 .nav a{
@@ -73,7 +71,7 @@
 }
 
 .xp-bar{
-  width: 0px;
+  width: 100px;
   height: 20px;
   position: absolute;
   background-color: green;
@@ -91,22 +89,45 @@
 }
 
 h1{
-  color: #800020;
-  text-shadow: 2px 2px 4px #000000;
+  color: #f7f7f7;
+  text-shadow: 2px 4px 4px #000000;
   text-align: left;
-  margin: 5%;
-  font-size:350%;
+  margin-top: 25px;
+  margin-left: 60px;
+  font-size: 350%;
   font-family: "verdana";
 }
 
 h3{
-  text-align: left;
+  color: #f7f7f7;
+  text-shadow: 2px 2px 2px #000000;
+  text-align: center;
   margin-top: 20px;
   margin-left: 60px;
-  font-size:100%;
+  font-size: 120%;
   font-family: "verdana";
 }
 
+#input {
+  background-color: #f7f7f7;
+  text-align: center;
+  margin: center;
+  margin-top: 20%;
+  margin-left: 35%;
+  border: 6px solid rgb(255, 255, 255);
+  width: 35%;
+  padding: 10px;
+}
+
+.wrap {
+  color: green;
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 20%;
+  font-size: 100%;
+  font-weight: bold;
+  font-family: "verdana";
+}
 
 
 form {
@@ -152,6 +173,18 @@ form {
     margin: 24px 0 12px 0;
   }
   
+  .resize{
+    margin-top: -3%;
+    margin-left: 25%;
+    width: 200px;
+    height: 120px;
+  }
+
+  .resize img {
+    width: 100%;
+    height: auto;
+  }
+
   /* Avatar image */
   img.avatar {
     width: 40%;
@@ -191,10 +224,4 @@ form {
   }
   button:hover {
     opacity: 0.8;
-  }
-
-  #input{
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 60px;
   }
