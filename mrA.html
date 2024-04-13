@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=], initial-scale=1.0">
     <link rel="stylesheet" href="mrA.css">
+    <script src = "mrA.js"></script>
     <title>Mr. America</title>
 </head>
 <body>
@@ -12,7 +13,6 @@
         
             <div class = "nav">
                 <ul>
-                    <a href = "index.html">The Gym</a>
                     <a href = "mrA.html">Mr. America</a>
                     <a href = "BGP.html">British Grand Prix</a>
                     <a href = "arnold.html">Arnold's Classic</a>
@@ -31,14 +31,22 @@
            
             
             <img src = "imagesandavatars/averagebuild.png" alt = "Your Avatar" width = "50" height = "100" class = "centered-image">
-            <div class = "logButton">
-            
-    
-                <buttom type="button"  id = "log">Log Workout</buttom>
-                </div>
-            
+            <div class = "logInput">
+            <h3>Log Your Activity</h3>
+            <input id="input" placeholder = "Went on run, did 10 pushups, etc.">
+            </div>
+            <div class = "saveLogButton">
+            <button  onclick = "save();">Save Exercise</button>
+            <button  onclick = "view();">View Past Exercises</button>
+            <!-- <button onclick = "clear();">Clear Past Exercises</button> -->
+            <button onclick="clearExercise();">test</button>
+            <h3 id = "output">Past Exercises</h3>
+            </div>
         
-            <script src="mrA.js"></script>
+        
+
+               
+            
    
 </body>
 </html>
