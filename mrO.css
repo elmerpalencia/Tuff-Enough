@@ -1,6 +1,7 @@
 
 *{
     background-color: rgb(7, 7, 7);
+    color: white;
     margin: 0;
     padding: 0;
 }
@@ -42,80 +43,22 @@
     text-decoration: underline;
 }
 
-h1{
-    text-align: center;
-    color: white;
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
 }
 
-h2{
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   text-align: center;
-  color: white;
-}
-.img1{
-  margin-left: 100px;
-  margin-top: 50px;
-  padding-right: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
-.img2{
-  margin-left: 25px;
-  margin-top: 50px;
-}
-
-.img3{
-  margin-left: 50px;
-  margin-top: 50px;
-}
-
-.img4{
-  margin-left: 75px;
-  margin-top: 50px;
-}
-
-h31{
-  text-align: left;
-  margin-left: 175px;
-  color: white;
-  font-size: larger;
-}
-
-h3{
-  text-align: left;
-  margin-left: 90px;
-  color: rgb(255, 255, 255);
-}
-
-h41{
-  text-align: left;
-  margin-left: 420px;
-  margin-top: 20px;
-  color: white;
-  font-size: larger;
-}
-
-h4{
-  text-align:left;
-  margin-left: 420px;
-  margin-top: -20px;
-  color: rgb(255, 255, 255);
-  font-size: larger;
-}
-
-h5{
-  text-align: right;
-  margin-right: 500px;
-  margin-top: -20px;
-  color: white;
-  font-size: larger;
-}
-
-h6{
-  text-align: right;
-  margin-right: 125px;
-  margin-top: -20px;
-  color: white;
-  font-size: larger;
-}
 
 
 
