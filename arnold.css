@@ -68,21 +68,14 @@ button:hover {
   background-color: #f44336;
 }
 
-.xp-bar-container {
-  background-color: green;
-  width: 300px;
-  height: 20px;
-  border: 1px solid #000;
-  margin-bottom: 10px;
-  position: relative;
-  margin-left: 625px;
-}
-.container .xp-bar{
-  position: absolute;
-  height: 100%;
-  background-color: green;
-  animation: progress-animation 5s forwards;
-}
+
+.xp-bar{
+  width: 100px;
+    height: 20px;
+    position: absolute;
+    background-color: green;
+    animation: progress-animation 5s forwards;
+  }
 
 #logout{
   background-color: #fe0000;
@@ -92,6 +85,9 @@ button:hover {
   border: none;
   cursor: pointer;
   width: 100px;
+}
+button:hover {
+  opacity: 0.8;
 }
 
 

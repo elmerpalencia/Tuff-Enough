@@ -7,8 +7,9 @@
 
 .button-container {
   display: flex; /* Use Flexbox */
+  margin-top: 100px;
   justify-content: center;
-  margin: 0;
+  margin: 12px;
 }
 
 .button-container button {
@@ -18,10 +19,10 @@
 
 /* photo one class */
 .main-image {
-  width: 75%; /* Adjust the width as needed */
+  width: 80%; /* Adjust the width as needed */
   height: 550px; /* Maintain the aspect ratio */
   margin-top: 10px; /* Add some margin to separate it from the buttons */
-  margin-left: 100px;
+  margin-left: 80px;
 }
 
 .header{
@@ -69,11 +70,31 @@
   width: 100%;
 }
 
+.xp-bar{
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  background-color: green;
+  animation: progress-animation 5s forwards;
+}
+
+#logout {
+  background-color: #fe0000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: popinter;
+  width: 100px
+}
+
 h1{
+  color: #800020;
+  text-shadow: 2px 2px 4px #000000;
   text-align: left;
-  margin-top: 50px;
+  margin-top: 25px;
   margin-left: 60px;
-  font-size:300%;
+  font-size:350%;
   font-family: "verdana";
 }
 
