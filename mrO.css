@@ -1,6 +1,6 @@
 
 *{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
 }
@@ -32,7 +32,7 @@
 .nav a{
     font-size: 20px;
     padding: 14px 16px;
-    color: #fe0000;
+    color: #f90202;
     text-decoration: none;
 
 }
