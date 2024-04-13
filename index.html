@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=], initial-scale=1.0">
-    <link rel="stylesheet" href="mrA.css">
+    <link rel="stylesheet" href="index.css">
     <title>Tuff Enough</title>
 </head>
 <body>
@@ -22,19 +22,23 @@
         </div>
         
             <h1>TUFF ENOUGH</h1>
+            
             </div>
-            <form action="action_page.php" method="post">
-                <div class="imgcontainer">
-                </div>
+            <div id="login-error-msg-holder">
+              <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+            </div>
+
+            <form id="login-form">
+               
               
                 <div class="container">
                   <label for="uname"><b>Username</b></label>
-                  <input type="text" placeholder="Enter Username" name="uname" required>
+                  <input id="username-field" type="text" placeholder="Enter Username" name="username" required>
               
                   <label for="psw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
+                  <input id="password-field" type="password" placeholder="Enter Password" name="password" required>
               
-                  <button type="submit">Login</button>
+                  <button id="login-form-submit" type="submit">Login</button>
                   <label>
                     <input type="checkbox" checked="checked" name="remember"> Remember me
                   </label>
@@ -48,13 +52,35 @@
             
         </div>
 
-        
+        <script>
+          const loginForm = document.getElementById("login-form");
+          const loginButton = document.getElementById("login-form-submit");
+          const loginErrorMsg = document.getElementById("login-error-msg");
+
+          loginButton.addEventListener("click", (e) => {
+            
+            e.preventDefault();
+            const username = loginForm.username.value;
+            const password = loginForm.password.value;
+
+            if (username === "b" && password === "b") {
+              // alert("You have successfully logged in.");
+              location.reload();
+              createAvatar();
+            }
+            else {
+              loginErrorMsg.style.opacity = 1;
+            } 
+
+          })
+
+          function createAvatar() {
+            window.location.href = "mrA.html";
+          }
+                    
+        </script>
 
 
-
-        <footer>
-       
-        </footer>
 
    
         
