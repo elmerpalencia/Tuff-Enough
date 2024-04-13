@@ -210,4 +210,12 @@ form {
     background-color: green;
     animation: progress-animation 5s forwards;
   }
-  
+  #logout {
+    background-color: #fe0000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: popinter;
+    width: 100px
+  }
