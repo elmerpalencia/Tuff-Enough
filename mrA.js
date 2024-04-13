@@ -1,5 +1,6 @@
 
-                
+
+
 const save =() => {
     //get data from input box
     var new_data = document.getElementById('input').value;
@@ -16,6 +17,8 @@ const save =() => {
     //save everything
     localStorage.setItem('exerciseLogs', JSON.stringify(old_data));
 
+    document.getElementById("input").value = '';
+
 }
 
 
@@ -31,6 +34,7 @@ const clearExercise = () => {
     console.log("Inside clear");
 
     localStorage.setItem('exerciseLogs', '[]');
+    view();
     
     // if(localStorage.getItem('exerciseLogs') != null){
     //     document.getElementById('output').innerHTML = JSON.parse(localStorage.getItem('exerciseLogs'));
