@@ -24,21 +24,54 @@
             <div>
                 <h1>British Grand Prix</h1>
                             
-                <h3>Your Body Buiasdfasdfld</h3>
+                <h3>Your Body Build</h3>
+                <input id="input" placeholder = "Went on run, did 10 pushups, etc.">
                 <h3>Swoleness Level</h3>
-                
-                <button onclick="increaseXP()" id="log-exercise" type="submit"> Log Workout </button>                 
-                <div id= "center" class="xp-bar"> </div>
 
-                <script> const element = document.getElementById('center');           
-                let percent = 0;
+
+            </div>
+            
+            <div> 
+                <img src="imagesandavatars/mc (1).png" alt = "Avatar" width = "120" height = "120" class="main-image">
+            </div>
+        </div>
+        
+        <!-- Xp barcode :) -->
+        <div id= "center" class="xp-bar"> </div>
+        <script> const element = document.getElementById('center');           
+        let percent = 0;
 
         function increaseXP () {             
             percent += 10;             
             document.getElementById('center').style.width = percent + "%";             
             if(percent === 100){               
                 alert("Congrats! You have leveled up.")               
-                window.location.href = "arnold.html"; }}
+                window.location.href = "arnold.html"; }
+
+            var new_data = document.getElementById('input').value;
+
+            if(localStorage.getItem('exerciseBGP') == null){
+                localStorage.setItem('exerciseBGP', '[]');
+            }
+
+            var old_data = JSON.parse(localStorage.getItem('exerciseBGP'));
+            if(new_data){
+                old_data.push(new_data);
+            }
+
+            localStorage.setItem('exerciseBGP', JSON.stringify(old_data));
+        }
+
+        function view(){
+            //if there is indeed data thencontinue
+            if(localStorage.getItem('exerciseBGP') != null){
+                document.getElementById('output').innerHTML = JSON.parse(localStorage.getItem('exerciseBGP'));
+            }
+        }
+
+        function clearBGP(){
+            localStorage.setItem('exerciseBGP', '[]');
+        }
         </script>
 
         <footer>
@@ -47,8 +80,9 @@
                 
             <div class = "button-container">
                 <button onclick = "increaseXP()" id="log-exercise" type="submit"> Log Workout </button>
-                <button type="submit"> See Progress </button>
-                <button type="submit"> Previous Workout </button>
+                <button onclick = "clearBGP()" type="submit"> See Progress </button>
+                <button onclick = "view();" type="submit"> Previous Workout </button>
+                <h3 id ="output">Previous Workout View</h3>
             </div>
 
             <div> 
