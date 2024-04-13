@@ -1,13 +1,13 @@
 
 *{
-    background-color: white;
-    margin: 0;
-    padding: 0;
+  background-color: white;
+  margin: 0;
+  padding: 0;
 }
 
 
 .header{
-    display: flex;
+  display: flex;
   align-items: center;
   /* background-color: black; */
   
@@ -17,33 +17,33 @@
   
 }
 .header img{
-    width: 200px;
-    height: 200px;
-    margin-top: 40px;
-    margin-left: 40px;
-    box-shadow: 10px 10px 5px rgb(62, 63, 63);
+  width: 200px;
+  height: 200px;
+  margin-top: 40px;
+  margin-left: 40px;
+  box-shadow: 10px 10px 5px rgb(62, 63, 63);
 }
 .nav{
-    align-items: center;
-    margin-left: 300px;
-    padding-right: 40px;
-    padding-top: 20px;
+  align-items: center;
+  margin-left: 300px;
+  padding-right: 40px;
+  padding-top: 20px;
 }
 .nav a{
-    font-size: 20px;
-    padding: 14px 16px;
-    color: #fe0000;
-    text-decoration: none;
+  font-size: 20px;
+  padding: 14px 16px;
+  color: #fe0000;
+  text-decoration: none;
 
 }
 .nav a:hover{
-    background-color: #fe0000;
-    color: white;
-    text-decoration: underline;
+  background-color: #fe0000;
+  color: white;
+  text-decoration: underline;
 }
 
 h1{
-    text-align: center;
+  text-align: center;
 }
 
 
