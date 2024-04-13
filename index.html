@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=], initial-scale=1.0">
-    <link rel="stylesheet" href="mrA.css">
+    <link rel="stylesheet" href="index.css">
     <title>Tuff Enough</title>
 </head>
 <body>
@@ -22,6 +22,7 @@
         </div>
         
             <h1>TUFF ENOUGH</h1>
+            
             </div>
             <div id="login-error-msg-holder">
               <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
@@ -62,28 +63,24 @@
             const username = loginForm.username.value;
             const password = loginForm.password.value;
 
-            if (username === "user" && password === "web_dev") {
-              alert("You have successfully logged in.");
+            if (username === "b" && password === "b") {
+              // alert("You have successfully logged in.");
               location.reload();
+              createAvatar();
             }
             else {
               loginErrorMsg.style.opacity = 1;
             } 
 
           })
+
+          function createAvatar() {
+            window.location.href = "mrA.html";
+          }
                     
         </script>
 
 
-
-
-        
-
-
-
-        <footer>
-       
-        </footer>
 
    
         
