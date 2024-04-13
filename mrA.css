@@ -125,3 +125,24 @@ form {
     display: block;
     margin: 0 auto;
   }
+
+  .xp-bar-container {
+    background-color: green;
+    width: 300px;
+    height: 20px;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    position: relative;
+    margin-left: 625px;
+  }
+  .container .xp-bar{
+    position: absolute;
+    height: 100%;
+    background-color: green;
+    animation: progress-animation 5s forwards;
+  }
+
+  @keyframes progress-animation {
+    0% {width: 0%;}
+    100% {width: 100%}
+  }
