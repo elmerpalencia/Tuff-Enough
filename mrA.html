@@ -13,7 +13,6 @@
         
             <div class = "nav">
                 <ul>
-                    <a href = "index.html">The Gym</a>
                     <a href = "mrA.html">Mr. America</a>
                     <a href = "BGP.html">British Grand Prix</a>
                     <a href = "arnold.html">Arnold's Classic</a>
@@ -42,6 +41,14 @@
             <button onclick = "clear();">Clear Past Exercises</button>
             <h3 id = "output">Past Exercises</h3>
             </div>
+
+            <button onclick="logout()" id="logout" type="submit">Logout</button>
+            <script>
+                function logout() {
+                window.location.href = "index.html";
+              }
+            </script>
+
         
         
 

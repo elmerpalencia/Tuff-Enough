@@ -12,7 +12,6 @@
         
             <div class = "nav">
                 <ul>
-                    <a href = "index.html">The Gym</a>
                     <a href = "mrA.html">Mr. America</a>
                     <a href = "BGP.html">British Grand Prix</a>
                     <a href = "arnold.html">Arnold's Classic</a>
@@ -24,7 +23,7 @@
         <div class = "button-container">
 
 
-            <button type="submit"> Log Workout</button>
+            <button id="log-exercise" type="submit"> Log Workout</button>
             <button type="submit"> See Progress</button>
             <button type="submit"> Previous Workoutt</button>
         </div>
@@ -32,6 +31,16 @@
         <div class = "xp-bar-container">
             <div class="xp-bar"></div>
         </div>
+
+        <button onclick="logout()" id="logout" type="submit">Logout</button>
+
+        <script>
+            function logout() {
+            window.location.href = "index.html";
+          }
+        </script>
+
+        
 
         
 
