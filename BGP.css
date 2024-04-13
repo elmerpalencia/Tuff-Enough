@@ -71,7 +71,7 @@
 }
 
 .xp-bar{
-  width: 100px;
+  width: 0px;
   height: 20px;
   position: absolute;
   background-color: green;
