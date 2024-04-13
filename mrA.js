@@ -37,8 +37,5 @@ const clearExercise = () => {
     // }
 }
 
-const upload = () => {
 
-    const progressBar = document.querySelector
-}
 
