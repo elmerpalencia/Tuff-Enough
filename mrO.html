@@ -46,26 +46,64 @@
                     <h5> Ronnie Coleman</h5>
                     <h2> "King" 8x Mr. Olympia</h2>
                 </div>
-            
-                
-                <!-- 
-                
-                <img src = "imagesandavatars/ronniecoleman.png" alt = "Your Avatar" width = "275" height = "250" class = "img4"
-                <h6> "King" 8x Mr. Olympia</h6> -->
             </div>
+            
+            <div class = "row1">
+                <div class = "column1">
+                    <h1> <br>Your Bodybuilder</h1>
+                    <img src = "imagesandavatars/olympian.png" alt = "Your Avatar" width = "275" height = "250" class = "img5">
+                </div>
+            </div>
+            <input id="input" placeholder = "Went on run, did 10 pushups, etc.">
+            <button onclick = "save();" style = "text-align: center; color: black;">Log Progress</button>
+            <button onclick = "view();" style = "text-align: center; color: black">Past Workouts</button>
+            <button onclick = "clearPast()" style = "text-align: center; color: black">Clear Past Workouts</button>
+            <h2 id = "output">Past Workouts</h2>
+
+            <script>
+                function save(){
+                var new_data = document.getElementById('input').value;
+
+                if(localStorage.getItem('olympiaLogs') == null){
+                    localStorage.setItem('olympiaLogs', '[]');
+                }
+
+                    var old_data = JSON.parse(localStorage.getItem('olympiaLogs'));
+                    if(new_data){
+                        old_data.push(new_data);
+                    }
+
+                    localStorage.setItem('olympiaLogs', JSON.stringify(old_data));
+                }
+
+                function view(){
+
+                    if(localStorage.getItem('olympiaLogs') != null){
+                        document.getElementById('output').innerHTML = JSON.parse(localStorage.getItem('olympiaLogs'));
+                    }
+                }
+
+                function clearPast(){
+                    localStorage.setItem('olympiaLogs', '[]');
+                }
+            
+            </script>
+
+
            
-            <!-- </div> -->
+           
+            
 
         
 
 
 
-            <button onclick="logout()" id="logout" type="submit">Logout</button>
+            <!-- <button onclick="logout()" id="logout" type="submit">Logout</button>
             <script>
                 function logout() {
                 window.location.href = "index.html";
               }
-            </script>
+            </script> -->
 
    
         
