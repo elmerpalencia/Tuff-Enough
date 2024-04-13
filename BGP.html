@@ -24,13 +24,21 @@
             <div>
                 <h1>British Grand Prix</h1>
                             
-                <h3>Your Body Build</h3>
-                <input id="input" placeholder = "Went on run, did 10 pushups, etc.">
-                <h3>Swoleness Level</h3>
+                <h3>Your Avatar</h3>
 
+                <div class = "resize"> 
+                    <img src="imagesandavatars/mmm-removebg-preview.png" alt = "Avatar" class="main-image">
+                </div>
+                
+                <input id="input" placeholder = "Went on run, did 10 pushups, etc.">
+                
+
+                <div class = "wrap">
+                    <span>Swoleness Level ᕚ('▿')ᕘ </span>
+                </div>
 
             </div>
-            
+
             <div> 
                 <img src="imagesandavatars/mc (1).png" alt = "Avatar" width = "120" height = "120" class="main-image">
             </div>
@@ -39,7 +47,7 @@
         <!-- Xp barcode :) -->
         <div id= "center" class="xp-bar"> </div>
         <script> const element = document.getElementById('center');           
-        let percent = 0;
+        let percent = 0;s
 
         function increaseXP () {             
             percent += 10;             
@@ -80,8 +88,8 @@
                 
             <div class = "button-container">
                 <button onclick = "increaseXP()" id="log-exercise" type="submit"> Log Workout </button>
-                <button onclick = "clearBGP()" type="submit"> See Progress </button>
-                <button onclick = "view();" type="submit"> Previous Workout </button>
+                <button onclick = "clearBGP()" type="submit"> Clear Progress </button>
+                <button onclick = "view();" type="submit"> Workout Done </button>
                 <h3 id ="output">Previous Workout View</h3>
             </div>
 
