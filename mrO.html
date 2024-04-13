@@ -26,7 +26,7 @@
                 <div class= "column">
                     <img src = "imagesandavatars/markusruhl.png" alt = "Your Avatar" width = "250" height = "250" class = "img1">
                     <h5> Markus Ruhl </h5>
-                    <h2> Considered the biggest of all time.</h2>
+                    <h2> Biggest Of All Time</h2>
                 </div>
 
                 <div class="column">
@@ -46,26 +46,111 @@
                     <h5> Ronnie Coleman</h5>
                     <h2> "King" 8x Mr. Olympia</h2>
                 </div>
-            
-                
-                <!-- 
-                
-                <img src = "imagesandavatars/ronniecoleman.png" alt = "Your Avatar" width = "275" height = "250" class = "img4"
-                <h6> "King" 8x Mr. Olympia</h6> -->
             </div>
+            
+            <div class = "row1">
+                <div class = "column1">
+                    <img src = "imagesandavatars/leepriest.png" alt = "Your Avatar" width = "300" height = "250" class = "img5">
+                    <h5> Lee Priest </h5>
+                    <h2> The Blonde Myth </h2>
+                </div>
+
+                <div class = "column1">
+                    <h1> <br>WILL YOU BE NEXT? <br> <br>Your Avatar</h1>
+                    <img src = "imagesandavatars/olympian.png" alt = "Your Avatar" width = "275" height = "250" class = "img5">
+                </div>
+
+                <div class = "column1">
+                    <img src = "imagesandavatars/flexwheeler.png" alt = "Your Avatar" width = "275" height = "250" class = "img5">
+                    <h5> Flex Wheeler </h5>
+                    <h2> The Sultan of Symmetry </h2>
+                </div>
+            </div>
+
+            <div class = "row2">
+                <div class = "column2">
+                    <input id="input" placeholder = "Went on run, did 10 pushups, etc.">
+                </div>
+            </div>
+
+            <div class = "row3">
+                <div class = "column 3">
+                    <button onclick = "save();" style = "text-align: center; color: black;">Log Workout</button>
+                </div>
+
+                <div class = "column3">
+                    <button onclick = "clearPast()" style = "text-align: center; color: black">Clear Past Workouts</button>
+                </div>
+
+                <div class = "column3">
+                    <button onclick = "view();" style = "text-align: center; color: black">Past Workouts</button>
+                </div>
+            </div>
+                        
+                        <h2 id = "output">Past Workouts</h2>
+            <div id= "center" class="xp-bar"> </div>
+
+            <script>
+                const element = document.getElementById('center');   
+                let percent = 0;
+                function save(){
+                percent += 10;
+                document.getElementById('center').style.width = percent + "%";             
+                if(percent === 110){               
+                    alert("Congrats! You have leveled up.")               
+                    window.location.href = "final.html"; }
+                var new_data = document.getElementById('input').value;
+
+                if(localStorage.getItem('olympiaLogs') == null){
+                    localStorage.setItem('olympiaLogs', '[]');
+                }
+
+                    var old_data = JSON.parse(localStorage.getItem('olympiaLogs'));
+                    if(new_data){
+                        old_data.push(new_data);
+                    }
+
+                    localStorage.setItem('olympiaLogs', JSON.stringify(old_data));
+                    document.getElementById('input').value = '';
+                }
+
+                function view(){
+
+                    if(localStorage.getItem('olympiaLogs') != null){
+                        document.getElementById('output').innerHTML = JSON.parse(localStorage.getItem('olympiaLogs'));
+                    }
+                }
+
+                function clearPast(){
+                    localStorage.setItem('olympiaLogs', '[]');
+                    view();
+                }
+            
+            </script>
+            <button onclick = "logout()" id = "logout" type = "submit"> Logout
+            </button>
+
+            <script>
+                function logout() {
+                    window.location.href = "index.html";
+                }
+            </script>
+
+
            
-            <!-- </div> -->
+           
+            
 
         
 
 
 
-            <button onclick="logout()" id="logout" type="submit">Logout</button>
+            <!-- <button onclick="logout()" id="logout" type="submit">Logout</button>
             <script>
                 function logout() {
                 window.location.href = "index.html";
               }
-            </script>
+            </script> -->
 
    
         

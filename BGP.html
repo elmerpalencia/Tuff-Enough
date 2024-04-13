@@ -11,7 +11,6 @@
         <div class = "header">
             <div class = "nav">
                 <ul>
-                    <a href = "index.html">The Gym</a>
                     <a href = "mrA.html">Mr. America</a>
                     <a href = "BGP.html">British Grand Prix</a>
                     <a href = "arnold.html">Arnold's Classic</a>
@@ -52,7 +51,7 @@
         function increaseXP () {             
             percent += 10;             
             document.getElementById('center').style.width = percent + "%";             
-            if(percent === 100){               
+            if(percent === 110){               
                 alert("Congrats! You have leveled up.")               
                 window.location.href = "arnold.html"; }
 
@@ -68,6 +67,8 @@
             }
 
             localStorage.setItem('exerciseBGP', JSON.stringify(old_data));
+
+            document.getElementById('input').value = '';
         }
 
         function view(){
@@ -79,6 +80,7 @@
 
         function clearBGP(){
             localStorage.setItem('exerciseBGP', '[]');
+            view();
         }
         </script>
 
@@ -88,8 +90,8 @@
                 
             <div class = "button-container">
                 <button onclick = "increaseXP()" id="log-exercise" type="submit"> Log Workout </button>
-                <button onclick = "clearBGP()" type="submit"> Clear Progress </button>
-                <button onclick = "view();" type="submit"> Workout Done </button>
+                <button onclick = "clearBGP()" type="submit"> See Progress </button>
+                <button onclick = "view();" type="submit"> Previous Workout </button>
                 <h3 id ="output">Previous Workout View</h3>
             </div>
 

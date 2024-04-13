@@ -21,32 +21,7 @@
   
 }
 
-.nav{
-    align-content: center;
-    /* margin-left: 250px;
-    padding-right: 40px;  */
-    padding-top: 10px;
-    padding-bottom: 10px;
-    overflow: hidden;
-   
 
-}
-.nav a{
-  text-align: center;
-    font-size: 20px;
-    padding: 14px 16px;
-    color: #fe0000;
-    text-decoration: none;
-    border-radius: 5px;
-    
-    
-
-}
-.nav a:hover{
-    background-color: #fe0000;
-    color: white;
-    text-decoration: underline;
-}
 
 .idk{
   margin: auto;

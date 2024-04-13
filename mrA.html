@@ -29,17 +29,28 @@
             
             <img src = "imagesandavatars/averagebuild.png" alt = "Your Avatar" width = "50" height = "100" class = "centered-image">
             <div class = "logInput">
-            <h3>Log Your Activity</h3>
-            <input id="input" placeholder = "Went on run, did 10 pushups, etc.">
+                <h3>Log Your Activity</h3>
+                <input id="input" placeholder = "Went on run, did 10 pushups, etc.">
             </div>
             <div class = "saveLogButton">
-            <button  onclick = "save();">Save Exercise</button>
-            <button  onclick = "view();">View Past Exercises</button>
-            <!-- <button onclick = "clear();">Clear Past Exercises</button> -->
-            <button onclick="clearExercise();">test</button>
-            <h3 id = "output">Past Exercises</h3>
-            </div>
-        
+                <button id="save" onclick = "increaseXP();">Log Workout</button>
+                <button onclick="clearExercise();">Clear</button>
+                <button  onclick = "view();">View Past Exercises</button>
+                <!-- <button onclick = "clear();">Clear Past Exercises</button> -->
+                
+                <h3 id = "output">Past Exercises: </h3>
+                </div>
+                
+            <div id= "center" class="xp-bar"> </div> 
+            <button onclick = "logout()" id = "logout" type = "submit"> Logout
+            </button>
+
+            <script>
+                function logout() {
+                    window.location.href = "index.html";
+                }
+            </script>
+                
         
 
                

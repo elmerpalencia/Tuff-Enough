@@ -24,10 +24,12 @@
     box-shadow: 10px 10px 5px rgb(62, 63, 63);
 }
 .nav{
-    align-items: center;
-    margin-left: 300px;
-    padding-right: 40px;
-    padding-top: 20px;
+  margin-top: 5%;
+  float: none;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .nav a{
     font-size: 20px;
@@ -71,7 +73,7 @@ button:hover {
 
 .xp-bar{
   width: 100px;
-    height: 20px;
+    height: 0px;
     position: absolute;
     background-color: green;
     animation: progress-animation 5s forwards;
